@@ -1,0 +1,29 @@
+### Get all skills
+GET localhost:7070/api/v1/skills/
+
+### Get a skill by id
+GET localhost:7070/api/v1/skills/1
+
+### Delete a skill
+DELETE localhost:7070/api/v1/skills/2
+
+### Update a skill
+PUT localhost:7070/api/v1/skills/1
+Content-Type: application/json
+
+{
+  "name": "Python",
+  "skillCategory": "PROG_LANG",
+  "description": "General purpose programming language"
+
+}
+
+### Create a skill
+POST http://localhost:7070/api/v1/skills
+Content-Type: application/json
+
+{
+  "name": "Python",
+  "skillCategory": "PROG_LANG",
+  "description": "Backend scripting and data analysis"
+}

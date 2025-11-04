@@ -1,0 +1,32 @@
+### Get all candidates
+GET localhost:7070/api/v1/candidates/
+
+### Get a candidate by id
+GET localhost:7070/api/v1/candidates/1
+
+### Delete a candidate
+DELETE localhost:7070/api/v1/candidates/2
+
+### Update a candidate
+PUT localhost:7070/api/v1/candidates/1
+Content-Type: application/json
+
+{
+  "name": "Frederik Holm",
+  "phone": "99887766",
+  "education": "PhD in Software Engineering"
+
+
+}
+
+### Create a candidate
+POST localhost:7070/api/v1/candidates/
+Content-Type: application/json
+
+{
+  "name": "Anders Jensen",
+  "phone": "22556677",
+  "education": "M.Sc. Software Engineering"
+
+
+}
