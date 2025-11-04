@@ -1,5 +1,7 @@
 package app.config;
 
+import app.entities.Candidate;
+import app.entities.Skill;
 import app.security.entities.Role;
 import app.security.entities.User;
 import app.utils.Utils;
@@ -43,6 +45,8 @@ public class HibernateConfig {
     private static void getAnnotationConfiguration(Configuration configuration) {
         configuration.addAnnotatedClass(User.class);
         configuration.addAnnotatedClass(Role.class);
+        configuration.addAnnotatedClass(Skill.class);
+        configuration.addAnnotatedClass(Candidate.class);
         // configuration.addAnnotatedClass(Trip.class);
        // configuration.addAnnotatedClass(Trip.class);
     }
